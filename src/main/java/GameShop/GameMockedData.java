@@ -36,6 +36,7 @@ public class GameMockedData {
     }
 
     public GameDetail addGame(int id, String title, String genre, String platform, double price) {
+        int new_game = games.size() + 1;
         GameDetail addGame = new GameDetail(id, title, genre, platform, price);
         games.add(addGame);
         return addGame;
